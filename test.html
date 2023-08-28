@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Three-Column Layout</title>
+    <style>
+        /* Style for the three columns */
+        .column {
+            width: 33.33%;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>This is the content for the first column.</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>This is the content for the second column.</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>This is the content for the third column.</p>
+        </div>
+    </div>
+</body>
+</html>
